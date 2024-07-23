@@ -1,0 +1,1 @@
+Select * from public."user" where user.email = 'muhammadarsal152@gmail.com'
