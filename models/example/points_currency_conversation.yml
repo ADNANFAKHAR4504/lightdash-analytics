@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: points_currency_conversation
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: per_point_value
+        description: ""
+        meta:
+          dimension:
+            type: number

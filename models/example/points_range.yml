@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: points_range
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: min_range
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: max_range
+        description: ""
+        meta:
+          dimension:
+            type: number

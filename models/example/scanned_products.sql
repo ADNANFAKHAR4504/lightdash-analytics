@@ -1,0 +1,1 @@
+SELECT * FROM public.scanned_products

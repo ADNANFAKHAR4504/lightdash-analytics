@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: spatial_ref_sys
+    columns:
+      - name: srid
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: auth_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: auth_srid
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: srtext
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: proj4text
+        description: ""
+        meta:
+          dimension:
+            type: string

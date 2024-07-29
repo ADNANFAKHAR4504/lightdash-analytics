@@ -1,0 +1,44 @@
+version: 2
+models:
+  - name: scanned_products
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: title
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: price
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: quantity
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: ocr_scan_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: scanned_item_reward_points
+        description: ""
+        meta:
+          dimension:
+            type: number

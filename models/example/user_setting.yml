@@ -1,0 +1,74 @@
+version: 2
+models:
+  - name: user_setting
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: location_preference
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: text_preference
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: push_notification_preference
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: user_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: invite_screen_view
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: notification_center_view
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: marketing_message_clicked
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: activity_message_clicked
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: near_by_store_view
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: store_detail_view
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: product_detail_view
+        description: ""
+        meta:
+          dimension:
+            type: number

@@ -1,0 +1,79 @@
+version: 2
+models:
+  - name: user_device_info
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: is_jail_broken
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: can_mock_location
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: device_latitude
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: device_longitude
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: device_mac_address
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: device_os
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: device_model
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: device_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: device_ban_status
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: user_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: ip_address
+        description: ""
+        meta:
+          dimension:
+            type: string

@@ -1,0 +1,124 @@
+version: 2
+models:
+  - name: store
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: foursquare_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: latitude
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: longitude
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: address
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: formatted_address
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: cross_street
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: country
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: locality
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: post_code
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: region
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: timezone
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: store_check_in_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: store_receipt_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: in_store_partner
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: store_photo
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: user_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: location_type
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: radius
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: chain_id
+        description: ""
+        meta:
+          dimension:
+            type: string

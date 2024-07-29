@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: product_ocr_scans_ocr_scan
+    columns:
+      - name: product_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: ocr_scan_id
+        description: ""
+        meta:
+          dimension:
+            type: string

@@ -1,0 +1,64 @@
+version: 2
+models:
+  - name: points_definition
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: sign_up_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: daily_sign_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: refer_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: survey_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: watch_video_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: invite_points_limit
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: is_gift_card_redeemable
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: store_check_in_limit
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: watch_video_limit
+        description: ""
+        meta:
+          dimension:
+            type: number

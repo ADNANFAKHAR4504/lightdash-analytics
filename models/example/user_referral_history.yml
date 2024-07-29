@@ -1,0 +1,49 @@
+version: 2
+models:
+  - name: user_referral_history
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: status
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: referral_code
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: refer_by_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: refer_to_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: invite_points_redeemed
+        description: ""
+        meta:
+          dimension:
+            type: boolean

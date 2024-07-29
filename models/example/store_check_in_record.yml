@@ -1,0 +1,39 @@
+version: 2
+models:
+  - name: store_check_in_record
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: user_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: store_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: store_check_in_trigger_source
+        description: ""
+        meta:
+          dimension:
+            type: string

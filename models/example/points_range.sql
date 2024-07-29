@@ -1,0 +1,1 @@
+SELECT * FROM public.points_range

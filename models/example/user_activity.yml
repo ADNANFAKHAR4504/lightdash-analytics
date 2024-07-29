@@ -1,0 +1,34 @@
+version: 2
+models:
+  - name: user_activity
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: activity_message
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: performed_by_id
+        description: ""
+        meta:
+          dimension:
+            type: string

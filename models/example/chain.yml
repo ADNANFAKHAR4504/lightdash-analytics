@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: chain
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean

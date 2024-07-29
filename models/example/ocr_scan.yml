@@ -1,0 +1,99 @@
+version: 2
+models:
+  - name: ocr_scan
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: image
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: status
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: approvedby
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: createdby
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: store_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: store_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: store_address
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: amount_paid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: invoice_receipt_date
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: sub_total
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: total
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: tax
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: discount
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: invoice_receipt_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: total_points
+        description: ""
+        meta:
+          dimension:
+            type: number

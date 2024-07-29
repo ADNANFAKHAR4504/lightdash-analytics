@@ -1,0 +1,134 @@
+version: 2
+models:
+  - name: users
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: last_logged_in
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: signup_method
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: email
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: first_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: last_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: birth_date
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: current_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: underage
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: city
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: state
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: address
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: firebase_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: phone_number
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: password
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: picture
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: fcm_token
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: refresh_token
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: referral_code
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_verified_email
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: role
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_blocked_by_admin
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: can_redeem
+        description: ""
+        meta:
+          dimension:
+            type: boolean

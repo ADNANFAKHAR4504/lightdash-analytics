@@ -1,0 +1,64 @@
+version: 2
+models:
+  - name: product
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: title
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: product_receipt_points
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: description
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: createdby
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: category_id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: storeid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: product_image
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: quantity
+        description: ""
+        meta:
+          dimension:
+            type: string

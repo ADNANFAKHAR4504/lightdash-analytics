@@ -1,0 +1,64 @@
+version: 2
+models:
+  - name: store_banner
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: created_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: updated_at
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: title
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: store_banner_image
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: is_active
+        description: ""
+        meta:
+          dimension:
+            type: boolean
+      - name: expiry_date
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+      - name: storeid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: state_banner
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: banner_type
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: productid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: chain_id
+        description: ""
+        meta:
+          dimension:
+            type: string

@@ -1,0 +1,1 @@
+SELECT * FROM public.product_ocr_scans_ocr_scan

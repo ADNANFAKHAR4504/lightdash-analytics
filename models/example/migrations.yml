@@ -1,0 +1,19 @@
+version: 2
+models:
+  - name: migrations
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: timestamp
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: name
+        description: ""
+        meta:
+          dimension:
+            type: string

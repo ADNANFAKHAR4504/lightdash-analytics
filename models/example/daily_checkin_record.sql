@@ -1,0 +1,1 @@
+SELECT * FROM public.daily_checkin_record
