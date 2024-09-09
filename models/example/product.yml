@@ -62,3 +62,8 @@ models:
         meta:
           dimension:
             type: string
+      - name: sku
+        description: ""
+        meta:
+          dimension:
+            type: string

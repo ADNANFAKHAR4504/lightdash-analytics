@@ -1,5 +1,5 @@
 -- Use the `ref` function to select from other models
 
 select *
-from "dev_high_rewards"."dbt"."my_first_dbt_model"
+from "high_rewards"."dbt"."my_first_dbt_model"
 where id = 1

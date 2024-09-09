@@ -47,3 +47,8 @@ models:
         meta:
           dimension:
             type: boolean
+      - name: redemption_date
+        description: ""
+        meta:
+          dimension:
+            type: string

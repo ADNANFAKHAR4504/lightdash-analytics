@@ -1,5 +1,5 @@
 
-  create view "dev_high_rewards"."dbt"."daily_checkin_record__dbt_tmp"
+  create view "high_rewards"."dbt"."daily_checkin_record__dbt_tmp"
     
     
   as (

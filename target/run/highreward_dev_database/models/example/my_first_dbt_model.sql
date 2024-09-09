@@ -2,7 +2,7 @@
   
     
 
-  create  table "dev_high_rewards"."dbt"."my_first_dbt_model__dbt_tmp"
+  create  table "high_rewards"."dbt"."my_first_dbt_model__dbt_tmp"
   
   
     as

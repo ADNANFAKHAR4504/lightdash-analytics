@@ -1,5 +1,5 @@
 
-  create view "dev_high_rewards"."dbt"."redeemed_gift__dbt_tmp"
+  create view "high_rewards"."dbt"."redeemed_gift__dbt_tmp"
     
     
   as (

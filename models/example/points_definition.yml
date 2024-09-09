@@ -62,3 +62,8 @@ models:
         meta:
           dimension:
             type: number
+      - name: redeem_gift_limit
+        description: ""
+        meta:
+          dimension:
+            type: number

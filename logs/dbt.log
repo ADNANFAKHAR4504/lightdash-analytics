@@ -3064,3 +3064,1453 @@ drop view if exists "dev_high_rewards"."dbt"."my_second_dbt_model__dbt_backup" c
 [0m15:04:04.229531 [debug] [MainThread]: Command `dbt ls` succeeded at 15:04:04.229444 after 0.53 seconds
 [0m15:04:04.229859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78d3b9669ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78d3b95751b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78d3b9471630>]}
 [0m15:04:04.230171 [debug] [MainThread]: Flushing usage events
+[0m18:41:00.314431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798269e1dea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798268966d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798269650730>]}
+
+
+============================== 18:41:00.317363 | 28e4a115-8999-4938-85c3-31cafea0f584 ==============================
+[0m18:41:00.317363 [info ] [MainThread]: Running with dbt=1.8.4
+[0m18:41:00.317762 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/adnan/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/adnan/Desktop/lightdash-analytics/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:00.322560 [info ] [MainThread]: dbt version: 1.8.4
+[0m18:41:00.322883 [info ] [MainThread]: python version: 3.10.12
+[0m18:41:00.323136 [info ] [MainThread]: python path: /usr/bin/python3
+[0m18:41:00.323391 [info ] [MainThread]: os info: Linux-6.5.0-44-generic-x86_64-with-glibc2.35
+[0m18:41:00.357499 [info ] [MainThread]: Using profiles dir at /home/adnan/.dbt
+[0m18:41:00.357917 [info ] [MainThread]: Using profiles.yml file at /home/adnan/.dbt/profiles.yml
+[0m18:41:00.358185 [info ] [MainThread]: Using dbt_project.yml file at /home/adnan/Desktop/lightdash-analytics/dbt_project.yml
+[0m18:41:00.358553 [info ] [MainThread]: adapter type: postgres
+[0m18:41:00.358831 [info ] [MainThread]: adapter version: 1.8.2
+[0m18:41:00.421079 [info ] [MainThread]: Configuration:
+[0m18:41:00.421506 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:41:00.421799 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:41:00.422048 [info ] [MainThread]: Required dependencies:
+[0m18:41:00.422303 [debug] [MainThread]: Executing "git --help"
+[0m18:41:00.423858 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:41:00.424215 [debug] [MainThread]: STDERR: "b''"
+[0m18:41:00.424470 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:41:00.424721 [info ] [MainThread]: Connection:
+[0m18:41:00.424982 [info ] [MainThread]:   host: localhost
+[0m18:41:00.425212 [info ] [MainThread]:   port: 5433
+[0m18:41:00.425430 [info ] [MainThread]:   user: root
+[0m18:41:00.425643 [info ] [MainThread]:   database: high_rewards
+[0m18:41:00.425860 [info ] [MainThread]:   schema: dbt
+[0m18:41:00.426081 [info ] [MainThread]:   connect_timeout: 10
+[0m18:41:00.426295 [info ] [MainThread]:   role: None
+[0m18:41:00.426505 [info ] [MainThread]:   search_path: None
+[0m18:41:00.426712 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:41:00.426916 [info ] [MainThread]:   sslmode: disable
+[0m18:41:00.427117 [info ] [MainThread]:   sslcert: None
+[0m18:41:00.427329 [info ] [MainThread]:   sslkey: None
+[0m18:41:00.427536 [info ] [MainThread]:   sslrootcert: None
+[0m18:41:00.427740 [info ] [MainThread]:   application_name: dbt
+[0m18:41:00.427946 [info ] [MainThread]:   retries: 1
+[0m18:41:00.428272 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m18:41:00.429425 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:41:00.437983 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:41:00.438411 [debug] [MainThread]: On debug: select 1 as id
+[0m18:41:00.438693 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:41:00.439248 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m18:41:00.439748 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m18:41:00.440003 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m18:41:00.440253 [debug] [MainThread]: On debug: No close available on handle
+[0m18:41:00.440494 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:41:00.440745 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:41:00.440977 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:41:00.441605 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.16135243, "process_user_time": 0.878572, "process_kernel_time": 0.04814, "process_mem_max_rss": "95204", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m18:41:00.442081 [debug] [MainThread]: Command `dbt debug` failed at 18:41:00.442001 after 0.16 seconds
+[0m18:41:00.442394 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:41:00.442695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798269e1dea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7982696506d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798267f41d20>]}
+[0m18:41:00.443008 [debug] [MainThread]: Flushing usage events
+[0m18:43:09.524659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecc17d89f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecc177bb220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecc16477910>]}
+
+
+============================== 18:43:09.527899 | c98b2505-f32c-4f0e-b10f-0a59669f13ee ==============================
+[0m18:43:09.527899 [info ] [MainThread]: Running with dbt=1.8.4
+[0m18:43:09.528303 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/adnan/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/adnan/Desktop/lightdash-analytics/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:43:09.533280 [info ] [MainThread]: dbt version: 1.8.4
+[0m18:43:09.533630 [info ] [MainThread]: python version: 3.10.12
+[0m18:43:09.533877 [info ] [MainThread]: python path: /usr/bin/python3
+[0m18:43:09.534104 [info ] [MainThread]: os info: Linux-6.5.0-44-generic-x86_64-with-glibc2.35
+[0m18:43:09.536292 [info ] [MainThread]: Using profiles dir at /home/adnan/.dbt
+[0m18:43:09.536595 [info ] [MainThread]: Using profiles.yml file at /home/adnan/.dbt/profiles.yml
+[0m18:43:09.536836 [info ] [MainThread]: Using dbt_project.yml file at /home/adnan/Desktop/lightdash-analytics/dbt_project.yml
+[0m18:43:09.598823 [info ] [MainThread]: Configuration:
+[0m18:43:09.599255 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:43:09.599545 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:43:09.599785 [info ] [MainThread]: Required dependencies:
+[0m18:43:09.600027 [debug] [MainThread]: Executing "git --help"
+[0m18:43:09.601676 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:43:09.602064 [debug] [MainThread]: STDERR: "b''"
+[0m18:43:09.602313 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:43:09.602561 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:43:09.602794 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:43:09.603016 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'highreward_prod_database'
+
+
+[0m18:43:09.603599 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.11377795, "process_user_time": 0.831192, "process_kernel_time": 0.043746, "process_mem_max_rss": "86272", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m18:43:09.604079 [debug] [MainThread]: Command `dbt debug` failed at 18:43:09.604005 after 0.11 seconds
+[0m18:43:09.604384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecc17d89f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecc177b7e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ecc17f9f4c0>]}
+[0m18:43:09.604691 [debug] [MainThread]: Flushing usage events
+[0m12:15:17.292737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726b9297e530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726b9237fe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726b91027220>]}
+
+
+============================== 12:15:17.296067 | 04d78a42-a39c-445b-89cf-6599a0012c0a ==============================
+[0m12:15:17.296067 [info ] [MainThread]: Running with dbt=1.8.4
+[0m12:15:17.296473 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/adnan/.dbt', 'log_path': '/home/adnan/Desktop/lightdash-analytics/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:15:17.304297 [info ] [MainThread]: dbt version: 1.8.4
+[0m12:15:17.304659 [info ] [MainThread]: python version: 3.10.12
+[0m12:15:17.304915 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:15:17.305140 [info ] [MainThread]: os info: Linux-6.5.0-44-generic-x86_64-with-glibc2.35
+[0m12:15:17.352278 [info ] [MainThread]: Using profiles dir at /home/adnan/.dbt
+[0m12:15:17.352659 [info ] [MainThread]: Using profiles.yml file at /home/adnan/.dbt/profiles.yml
+[0m12:15:17.352906 [info ] [MainThread]: Using dbt_project.yml file at /home/adnan/Desktop/lightdash-analytics/dbt_project.yml
+[0m12:15:17.353322 [info ] [MainThread]: adapter type: postgres
+[0m12:15:17.353575 [info ] [MainThread]: adapter version: 1.8.2
+[0m12:15:17.414853 [info ] [MainThread]: Configuration:
+[0m12:15:17.415249 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:15:17.415503 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:15:17.415740 [info ] [MainThread]: Required dependencies:
+[0m12:15:17.415974 [debug] [MainThread]: Executing "git --help"
+[0m12:15:17.417313 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:15:17.417634 [debug] [MainThread]: STDERR: "b''"
+[0m12:15:17.417862 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:15:17.418103 [info ] [MainThread]: Connection:
+[0m12:15:17.418336 [info ] [MainThread]:   host: localhost
+[0m12:15:17.418564 [info ] [MainThread]:   port: 5433
+[0m12:15:17.418793 [info ] [MainThread]:   user: root
+[0m12:15:17.419001 [info ] [MainThread]:   database: high_rewards
+[0m12:15:17.419223 [info ] [MainThread]:   schema: dbt
+[0m12:15:17.419440 [info ] [MainThread]:   connect_timeout: 10
+[0m12:15:17.419647 [info ] [MainThread]:   role: None
+[0m12:15:17.419852 [info ] [MainThread]:   search_path: None
+[0m12:15:17.420056 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:15:17.420258 [info ] [MainThread]:   sslmode: disable
+[0m12:15:17.420458 [info ] [MainThread]:   sslcert: None
+[0m12:15:17.420660 [info ] [MainThread]:   sslkey: None
+[0m12:15:17.420861 [info ] [MainThread]:   sslrootcert: None
+[0m12:15:17.421060 [info ] [MainThread]:   application_name: dbt
+[0m12:15:17.421256 [info ] [MainThread]:   retries: 1
+[0m12:15:17.421565 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m12:15:17.422873 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:15:17.434572 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:15:17.435049 [debug] [MainThread]: On debug: select 1 as id
+[0m12:15:17.435340 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:15:18.841235 [debug] [MainThread]: SQL status: SELECT 1 in 1.406 seconds
+[0m12:15:18.843282 [debug] [MainThread]: On debug: Close
+[0m12:15:18.844089 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:15:18.844735 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:15:18.847110 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.5880203, "process_user_time": 0.908139, "process_kernel_time": 0.065747, "process_mem_max_rss": "97128", "process_in_blocks": "57816", "process_out_blocks": "32"}
+[0m12:15:18.848044 [debug] [MainThread]: Command `dbt debug` succeeded at 12:15:18.847882 after 1.59 seconds
+[0m12:15:18.848671 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:15:18.849305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726b9297e530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726b9112baf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x726b923b5090>]}
+[0m12:15:18.850059 [debug] [MainThread]: Flushing usage events
+[0m12:15:22.425097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffbf824d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffa6cf0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffa6cf070>]}
+
+
+============================== 12:15:22.427932 | af0c4168-6ae1-43d7-a452-850d8f554ae2 ==============================
+[0m12:15:22.427932 [info ] [MainThread]: Running with dbt=1.8.4
+[0m12:15:22.428310 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/adnan/.dbt', 'log_path': '/home/adnan/Desktop/lightdash-analytics/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m12:15:22.537671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffa67b7f0>]}
+[0m12:15:22.574954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffc1b28f0>]}
+[0m12:15:22.575551 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m12:15:22.581256 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m12:15:22.648101 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m12:15:22.648523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffb10d900>]}
+[0m12:15:23.414002 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_testing_dev_db' in the 'models' section of file 'models/example/my_testing_dev_db.yml'
+[0m12:15:23.503689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff89d6890>]}
+[0m12:15:23.568145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff850ee60>]}
+[0m12:15:23.568566 [info ] [MainThread]: Found 26 models, 4 data tests, 415 macros
+[0m12:15:23.568860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff850fa60>]}
+[0m12:15:23.570666 [info ] [MainThread]: 
+[0m12:15:23.571124 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:15:23.574954 [debug] [ThreadPool]: Acquiring new postgres connection 'list_high_rewards'
+[0m12:15:23.590978 [debug] [ThreadPool]: Using postgres connection "list_high_rewards"
+[0m12:15:23.591348 [debug] [ThreadPool]: On list_high_rewards: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "connection_name": "list_high_rewards"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:15:23.591608 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:15:24.991053 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.399 seconds
+[0m12:15:24.994695 [debug] [ThreadPool]: On list_high_rewards: Close
+[0m12:15:24.998212 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_high_rewards, now list_high_rewards_dbt)
+[0m12:15:25.005834 [debug] [ThreadPool]: Using postgres connection "list_high_rewards_dbt"
+[0m12:15:25.006151 [debug] [ThreadPool]: On list_high_rewards_dbt: BEGIN
+[0m12:15:25.006420 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:15:26.402997 [debug] [ThreadPool]: SQL status: BEGIN in 1.396 seconds
+[0m12:15:26.404087 [debug] [ThreadPool]: Using postgres connection "list_high_rewards_dbt"
+[0m12:15:26.404909 [debug] [ThreadPool]: On list_high_rewards_dbt: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "connection_name": "list_high_rewards_dbt"} */
+select
+      'high_rewards' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'high_rewards' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'high_rewards' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dbt'
+  
+[0m12:15:26.641543 [debug] [ThreadPool]: SQL status: SELECT 27 in 0.236 seconds
+[0m12:15:26.645580 [debug] [ThreadPool]: On list_high_rewards_dbt: ROLLBACK
+[0m12:15:26.879472 [debug] [ThreadPool]: On list_high_rewards_dbt: Close
+[0m12:15:26.893201 [debug] [MainThread]: Using postgres connection "master"
+[0m12:15:26.893850 [debug] [MainThread]: On master: BEGIN
+[0m12:15:26.894366 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:15:28.313696 [debug] [MainThread]: SQL status: BEGIN in 1.419 seconds
+[0m12:15:28.315586 [debug] [MainThread]: Using postgres connection "master"
+[0m12:15:28.316883 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m12:15:28.686942 [debug] [MainThread]: SQL status: SELECT 2 in 0.369 seconds
+[0m12:15:28.689496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff85a8fa0>]}
+[0m12:15:28.690551 [debug] [MainThread]: On master: ROLLBACK
+[0m12:15:28.923517 [debug] [MainThread]: Using postgres connection "master"
+[0m12:15:28.924671 [debug] [MainThread]: On master: BEGIN
+[0m12:15:29.405765 [debug] [MainThread]: SQL status: BEGIN in 0.480 seconds
+[0m12:15:29.407304 [debug] [MainThread]: On master: COMMIT
+[0m12:15:29.408316 [debug] [MainThread]: Using postgres connection "master"
+[0m12:15:29.409150 [debug] [MainThread]: On master: COMMIT
+[0m12:15:29.643129 [debug] [MainThread]: SQL status: COMMIT in 0.233 seconds
+[0m12:15:29.644204 [debug] [MainThread]: On master: Close
+[0m12:15:29.645324 [info ] [MainThread]: Concurrency: 1 threads (target='prod')
+[0m12:15:29.646111 [info ] [MainThread]: 
+[0m12:15:29.651569 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.category
+[0m12:15:29.652571 [info ] [Thread-1 (]: 1 of 26 START sql view model dbt.category ...................................... [RUN]
+[0m12:15:29.653339 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_high_rewards_dbt, now model.highreward_dev_database.category)
+[0m12:15:29.653957 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.category
+[0m12:15:29.661171 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.category"
+[0m12:15:29.661702 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.category
+[0m12:15:29.686622 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.category"
+[0m12:15:29.687328 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.category"
+[0m12:15:29.687682 [debug] [Thread-1 (]: On model.highreward_dev_database.category: BEGIN
+[0m12:15:29.687960 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:31.095510 [debug] [Thread-1 (]: SQL status: BEGIN in 1.407 seconds
+[0m12:15:31.096723 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.category"
+[0m12:15:31.097605 [debug] [Thread-1 (]: On model.highreward_dev_database.category: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.category"} */
+
+  create view "high_rewards"."dbt"."category__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.category
+  );
+[0m12:15:31.338844 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.240 seconds
+[0m12:15:31.392296 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.category"
+[0m12:15:31.392785 [debug] [Thread-1 (]: On model.highreward_dev_database.category: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.category"} */
+alter table "high_rewards"."dbt"."category" rename to "category__dbt_backup"
+[0m12:15:31.627310 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:31.634486 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.category"
+[0m12:15:31.634845 [debug] [Thread-1 (]: On model.highreward_dev_database.category: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.category"} */
+alter table "high_rewards"."dbt"."category__dbt_tmp" rename to "category"
+[0m12:15:31.867826 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.232 seconds
+[0m12:15:31.882990 [debug] [Thread-1 (]: On model.highreward_dev_database.category: COMMIT
+[0m12:15:31.883356 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.category"
+[0m12:15:31.883649 [debug] [Thread-1 (]: On model.highreward_dev_database.category: COMMIT
+[0m12:15:32.122703 [debug] [Thread-1 (]: SQL status: COMMIT in 0.238 seconds
+[0m12:15:32.134440 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."category__dbt_backup"
+[0m12:15:32.140118 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.category"
+[0m12:15:32.140558 [debug] [Thread-1 (]: On model.highreward_dev_database.category: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.category"} */
+drop table if exists "high_rewards"."dbt"."category__dbt_backup" cascade
+[0m12:15:32.385038 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.244 seconds
+[0m12:15:32.389307 [debug] [Thread-1 (]: On model.highreward_dev_database.category: Close
+[0m12:15:32.391760 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4d6c190>]}
+[0m12:15:32.392771 [info ] [Thread-1 (]: 1 of 26 OK created sql view model dbt.category ................................. [[32mCREATE VIEW[0m in 2.74s]
+[0m12:15:32.393706 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.category
+[0m12:15:32.394425 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.chain
+[0m12:15:32.395304 [info ] [Thread-1 (]: 2 of 26 START sql view model dbt.chain ......................................... [RUN]
+[0m12:15:32.396013 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.category, now model.highreward_dev_database.chain)
+[0m12:15:32.396604 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.chain
+[0m12:15:32.399210 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.chain"
+[0m12:15:32.399950 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.chain
+[0m12:15:32.404220 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.chain"
+[0m12:15:32.404757 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.chain"
+[0m12:15:32.405090 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: BEGIN
+[0m12:15:32.405357 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:33.798378 [debug] [Thread-1 (]: SQL status: BEGIN in 1.393 seconds
+[0m12:15:33.799573 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.chain"
+[0m12:15:33.800430 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.chain"} */
+
+  create view "high_rewards"."dbt"."chain__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.chain
+  );
+[0m12:15:34.033877 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.232 seconds
+[0m12:15:34.040822 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.chain"
+[0m12:15:34.041570 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.chain"} */
+alter table "high_rewards"."dbt"."chain" rename to "chain__dbt_backup"
+[0m12:15:34.273488 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:15:34.280085 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.chain"
+[0m12:15:34.280455 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.chain"} */
+alter table "high_rewards"."dbt"."chain__dbt_tmp" rename to "chain"
+[0m12:15:34.515325 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:34.520347 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: COMMIT
+[0m12:15:34.521298 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.chain"
+[0m12:15:34.522103 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: COMMIT
+[0m12:15:34.757833 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:15:34.762804 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."chain__dbt_backup"
+[0m12:15:34.764244 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.chain"
+[0m12:15:34.764870 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.chain"} */
+drop table if exists "high_rewards"."dbt"."chain__dbt_backup" cascade
+[0m12:15:35.001867 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.236 seconds
+[0m12:15:35.004711 [debug] [Thread-1 (]: On model.highreward_dev_database.chain: Close
+[0m12:15:35.005795 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff91bbc10>]}
+[0m12:15:35.006880 [info ] [Thread-1 (]: 2 of 26 OK created sql view model dbt.chain .................................... [[32mCREATE VIEW[0m in 2.61s]
+[0m12:15:35.007858 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.chain
+[0m12:15:35.008577 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.daily_checkin_record
+[0m12:15:35.009419 [info ] [Thread-1 (]: 3 of 26 START sql view model dbt.daily_checkin_record .......................... [RUN]
+[0m12:15:35.010150 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.chain, now model.highreward_dev_database.daily_checkin_record)
+[0m12:15:35.010807 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.daily_checkin_record
+[0m12:15:35.013558 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:35.014538 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.daily_checkin_record
+[0m12:15:35.019677 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:35.020259 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:35.020632 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: BEGIN
+[0m12:15:35.020951 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:36.417429 [debug] [Thread-1 (]: SQL status: BEGIN in 1.396 seconds
+[0m12:15:36.419040 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:36.420172 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.daily_checkin_record"} */
+
+  create view "high_rewards"."dbt"."daily_checkin_record__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.daily_checkin_record
+  );
+[0m12:15:36.659693 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.238 seconds
+[0m12:15:36.665598 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:36.666340 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.daily_checkin_record"} */
+alter table "high_rewards"."dbt"."daily_checkin_record" rename to "daily_checkin_record__dbt_backup"
+[0m12:15:36.901602 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:36.908404 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:36.909154 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.daily_checkin_record"} */
+alter table "high_rewards"."dbt"."daily_checkin_record__dbt_tmp" rename to "daily_checkin_record"
+[0m12:15:37.144110 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:37.145693 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: COMMIT
+[0m12:15:37.146046 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:37.146325 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: COMMIT
+[0m12:15:37.382781 [debug] [Thread-1 (]: SQL status: COMMIT in 0.236 seconds
+[0m12:15:37.387518 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."daily_checkin_record__dbt_backup"
+[0m12:15:37.388916 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.daily_checkin_record"
+[0m12:15:37.389522 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.daily_checkin_record"} */
+drop table if exists "high_rewards"."dbt"."daily_checkin_record__dbt_backup" cascade
+[0m12:15:37.627736 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.237 seconds
+[0m12:15:37.632145 [debug] [Thread-1 (]: On model.highreward_dev_database.daily_checkin_record: Close
+[0m12:15:37.633590 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff993bb80>]}
+[0m12:15:37.635012 [info ] [Thread-1 (]: 3 of 26 OK created sql view model dbt.daily_checkin_record ..................... [[32mCREATE VIEW[0m in 2.62s]
+[0m12:15:37.635560 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.daily_checkin_record
+[0m12:15:37.635907 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.migrations
+[0m12:15:37.636348 [info ] [Thread-1 (]: 4 of 26 START sql view model dbt.migrations .................................... [RUN]
+[0m12:15:37.636730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.daily_checkin_record, now model.highreward_dev_database.migrations)
+[0m12:15:37.637021 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.migrations
+[0m12:15:37.638409 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.migrations"
+[0m12:15:37.638855 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.migrations
+[0m12:15:37.642922 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.migrations"
+[0m12:15:37.643399 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.migrations"
+[0m12:15:37.643719 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: BEGIN
+[0m12:15:37.643990 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:39.041784 [debug] [Thread-1 (]: SQL status: BEGIN in 1.398 seconds
+[0m12:15:39.042793 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.migrations"
+[0m12:15:39.043664 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.migrations"} */
+
+  create view "high_rewards"."dbt"."migrations__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.migrations
+  );
+[0m12:15:39.280077 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.235 seconds
+[0m12:15:39.287336 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.migrations"
+[0m12:15:39.288126 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.migrations"} */
+alter table "high_rewards"."dbt"."migrations" rename to "migrations__dbt_backup"
+[0m12:15:39.523643 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:39.530447 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.migrations"
+[0m12:15:39.531274 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.migrations"} */
+alter table "high_rewards"."dbt"."migrations__dbt_tmp" rename to "migrations"
+[0m12:15:39.765703 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:15:39.770661 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: COMMIT
+[0m12:15:39.771545 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.migrations"
+[0m12:15:39.772291 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: COMMIT
+[0m12:15:40.010736 [debug] [Thread-1 (]: SQL status: COMMIT in 0.237 seconds
+[0m12:15:40.016755 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."migrations__dbt_backup"
+[0m12:15:40.019304 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.migrations"
+[0m12:15:40.019654 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.migrations"} */
+drop view if exists "high_rewards"."dbt"."migrations__dbt_backup" cascade
+[0m12:15:40.258078 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.238 seconds
+[0m12:15:40.261977 [debug] [Thread-1 (]: On model.highreward_dev_database.migrations: Close
+[0m12:15:40.263368 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4cab340>]}
+[0m12:15:40.264256 [info ] [Thread-1 (]: 4 of 26 OK created sql view model dbt.migrations ............................... [[32mCREATE VIEW[0m in 2.63s]
+[0m12:15:40.264733 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.migrations
+[0m12:15:40.265077 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.my_first_dbt_model
+[0m12:15:40.265490 [info ] [Thread-1 (]: 5 of 26 START sql table model dbt.my_first_dbt_model ........................... [RUN]
+[0m12:15:40.265845 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.migrations, now model.highreward_dev_database.my_first_dbt_model)
+[0m12:15:40.266136 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.my_first_dbt_model
+[0m12:15:40.268103 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:40.268566 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.my_first_dbt_model
+[0m12:15:40.284159 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:40.284772 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:40.285106 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: BEGIN
+[0m12:15:40.285386 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:41.686555 [debug] [Thread-1 (]: SQL status: BEGIN in 1.401 seconds
+[0m12:15:41.688326 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:41.689782 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_first_dbt_model"} */
+
+  
+    
+
+  create  table "high_rewards"."dbt"."my_first_dbt_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m12:15:41.924212 [debug] [Thread-1 (]: SQL status: SELECT 2 in 0.233 seconds
+[0m12:15:41.930419 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:41.931149 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_first_dbt_model"} */
+alter table "high_rewards"."dbt"."my_first_dbt_model" rename to "my_first_dbt_model__dbt_backup"
+[0m12:15:42.184920 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.253 seconds
+[0m12:15:42.192581 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:42.193492 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_first_dbt_model"} */
+alter table "high_rewards"."dbt"."my_first_dbt_model__dbt_tmp" rename to "my_first_dbt_model"
+[0m12:15:42.427952 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:15:42.438760 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: COMMIT
+[0m12:15:42.439466 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:42.440035 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: COMMIT
+[0m12:15:42.674364 [debug] [Thread-1 (]: SQL status: COMMIT in 0.233 seconds
+[0m12:15:42.680876 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."my_first_dbt_model__dbt_backup"
+[0m12:15:42.682516 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_first_dbt_model"
+[0m12:15:42.683233 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_first_dbt_model"} */
+drop table if exists "high_rewards"."dbt"."my_first_dbt_model__dbt_backup" cascade
+[0m12:15:42.929931 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.246 seconds
+[0m12:15:42.933338 [debug] [Thread-1 (]: On model.highreward_dev_database.my_first_dbt_model: Close
+[0m12:15:42.934567 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffa6c9930>]}
+[0m12:15:42.935780 [info ] [Thread-1 (]: 5 of 26 OK created sql table model dbt.my_first_dbt_model ...................... [[32mSELECT 2[0m in 2.67s]
+[0m12:15:42.936800 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.my_first_dbt_model
+[0m12:15:42.937682 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.notification_center
+[0m12:15:42.938789 [info ] [Thread-1 (]: 6 of 26 START sql view model dbt.notification_center ........................... [RUN]
+[0m12:15:42.939602 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.my_first_dbt_model, now model.highreward_dev_database.notification_center)
+[0m12:15:42.940235 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.notification_center
+[0m12:15:42.943134 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.notification_center"
+[0m12:15:42.943997 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.notification_center
+[0m12:15:42.948491 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.notification_center"
+[0m12:15:42.949045 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.notification_center"
+[0m12:15:42.949370 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: BEGIN
+[0m12:15:42.949670 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:44.359189 [debug] [Thread-1 (]: SQL status: BEGIN in 1.409 seconds
+[0m12:15:44.360185 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.notification_center"
+[0m12:15:44.360944 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.notification_center"} */
+
+  create view "high_rewards"."dbt"."notification_center__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.notification_center
+  );
+[0m12:15:44.597124 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.235 seconds
+[0m12:15:44.603642 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.notification_center"
+[0m12:15:44.604613 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.notification_center"} */
+alter table "high_rewards"."dbt"."notification_center" rename to "notification_center__dbt_backup"
+[0m12:15:44.838124 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:15:44.842709 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.notification_center"
+[0m12:15:44.843521 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.notification_center"} */
+alter table "high_rewards"."dbt"."notification_center__dbt_tmp" rename to "notification_center"
+[0m12:15:45.075347 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:15:45.081613 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: COMMIT
+[0m12:15:45.083132 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.notification_center"
+[0m12:15:45.084409 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: COMMIT
+[0m12:15:45.329039 [debug] [Thread-1 (]: SQL status: COMMIT in 0.243 seconds
+[0m12:15:45.335420 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."notification_center__dbt_backup"
+[0m12:15:45.337212 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.notification_center"
+[0m12:15:45.338001 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.notification_center"} */
+drop table if exists "high_rewards"."dbt"."notification_center__dbt_backup" cascade
+[0m12:15:45.581195 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.242 seconds
+[0m12:15:45.585840 [debug] [Thread-1 (]: On model.highreward_dev_database.notification_center: Close
+[0m12:15:45.587499 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff994e7d0>]}
+[0m12:15:45.588916 [info ] [Thread-1 (]: 6 of 26 OK created sql view model dbt.notification_center ...................... [[32mCREATE VIEW[0m in 2.65s]
+[0m12:15:45.590082 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.notification_center
+[0m12:15:45.590949 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.ocr_scan
+[0m12:15:45.592014 [info ] [Thread-1 (]: 7 of 26 START sql view model dbt.ocr_scan ...................................... [RUN]
+[0m12:15:45.592832 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.notification_center, now model.highreward_dev_database.ocr_scan)
+[0m12:15:45.593450 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.ocr_scan
+[0m12:15:45.598112 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.ocr_scan"
+[0m12:15:45.598849 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.ocr_scan
+[0m12:15:45.602760 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.ocr_scan"
+[0m12:15:45.603256 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan"
+[0m12:15:45.603562 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: BEGIN
+[0m12:15:45.603824 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:46.999802 [debug] [Thread-1 (]: SQL status: BEGIN in 1.396 seconds
+[0m12:15:47.000614 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan"
+[0m12:15:47.001402 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan"} */
+
+  create view "high_rewards"."dbt"."ocr_scan__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.ocr_scan
+  );
+[0m12:15:47.238687 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:15:47.244718 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan"
+[0m12:15:47.245479 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan"} */
+alter table "high_rewards"."dbt"."ocr_scan" rename to "ocr_scan__dbt_backup"
+[0m12:15:47.479570 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:15:47.487506 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan"
+[0m12:15:47.488567 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan"} */
+alter table "high_rewards"."dbt"."ocr_scan__dbt_tmp" rename to "ocr_scan"
+[0m12:15:47.723082 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:15:47.727476 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: COMMIT
+[0m12:15:47.728497 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan"
+[0m12:15:47.729329 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: COMMIT
+[0m12:15:47.965555 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:15:47.970830 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."ocr_scan__dbt_backup"
+[0m12:15:47.972331 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan"
+[0m12:15:47.972906 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan"} */
+drop table if exists "high_rewards"."dbt"."ocr_scan__dbt_backup" cascade
+[0m12:15:48.217657 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.244 seconds
+[0m12:15:48.220697 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan: Close
+[0m12:15:48.221827 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4ca02e0>]}
+[0m12:15:48.222955 [info ] [Thread-1 (]: 7 of 26 OK created sql view model dbt.ocr_scan ................................. [[32mCREATE VIEW[0m in 2.63s]
+[0m12:15:48.223887 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.ocr_scan
+[0m12:15:48.224513 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.ocr_scan_products_product
+[0m12:15:48.225546 [info ] [Thread-1 (]: 8 of 26 START sql view model dbt.ocr_scan_products_product ..................... [RUN]
+[0m12:15:48.226730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.ocr_scan, now model.highreward_dev_database.ocr_scan_products_product)
+[0m12:15:48.227542 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.ocr_scan_products_product
+[0m12:15:48.230942 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:48.231627 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.ocr_scan_products_product
+[0m12:15:48.235276 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:48.235823 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:48.236144 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: BEGIN
+[0m12:15:48.236425 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:49.642617 [debug] [Thread-1 (]: SQL status: BEGIN in 1.406 seconds
+[0m12:15:49.644245 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:49.645333 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan_products_product"} */
+
+  create view "high_rewards"."dbt"."ocr_scan_products_product__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.ocr_scan_products_product
+  );
+[0m12:15:49.882720 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:15:49.892678 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:49.893705 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan_products_product"} */
+alter table "high_rewards"."dbt"."ocr_scan_products_product" rename to "ocr_scan_products_product__dbt_backup"
+[0m12:15:50.128761 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:50.135679 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:50.136442 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan_products_product"} */
+alter table "high_rewards"."dbt"."ocr_scan_products_product__dbt_tmp" rename to "ocr_scan_products_product"
+[0m12:15:50.369843 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.232 seconds
+[0m12:15:50.375071 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: COMMIT
+[0m12:15:50.375573 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:50.375867 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: COMMIT
+[0m12:15:50.615033 [debug] [Thread-1 (]: SQL status: COMMIT in 0.239 seconds
+[0m12:15:50.619511 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."ocr_scan_products_product__dbt_backup"
+[0m12:15:50.621398 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.ocr_scan_products_product"
+[0m12:15:50.622194 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.ocr_scan_products_product"} */
+drop table if exists "high_rewards"."dbt"."ocr_scan_products_product__dbt_backup" cascade
+[0m12:15:50.858198 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.235 seconds
+[0m12:15:50.860721 [debug] [Thread-1 (]: On model.highreward_dev_database.ocr_scan_products_product: Close
+[0m12:15:50.861702 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff9908370>]}
+[0m12:15:50.862888 [info ] [Thread-1 (]: 8 of 26 OK created sql view model dbt.ocr_scan_products_product ................ [[32mCREATE VIEW[0m in 2.64s]
+[0m12:15:50.864049 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.ocr_scan_products_product
+[0m12:15:50.865004 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.points_currency_conversation
+[0m12:15:50.866198 [info ] [Thread-1 (]: 9 of 26 START sql view model dbt.points_currency_conversation .................. [RUN]
+[0m12:15:50.867420 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.ocr_scan_products_product, now model.highreward_dev_database.points_currency_conversation)
+[0m12:15:50.868497 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.points_currency_conversation
+[0m12:15:50.873637 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:50.874961 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.points_currency_conversation
+[0m12:15:50.881261 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:50.881976 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:50.882385 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: BEGIN
+[0m12:15:50.882756 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:52.276573 [debug] [Thread-1 (]: SQL status: BEGIN in 1.394 seconds
+[0m12:15:52.277088 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:52.277481 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_currency_conversation"} */
+
+  create view "high_rewards"."dbt"."points_currency_conversation__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.points_currency_conversion
+  );
+[0m12:15:52.511570 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.233 seconds
+[0m12:15:52.519456 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:52.520128 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_currency_conversation"} */
+alter table "high_rewards"."dbt"."points_currency_conversation" rename to "points_currency_conversation__dbt_backup"
+[0m12:15:52.754968 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:15:52.763990 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:52.764736 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_currency_conversation"} */
+alter table "high_rewards"."dbt"."points_currency_conversation__dbt_tmp" rename to "points_currency_conversation"
+[0m12:15:52.996116 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:15:52.998031 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: COMMIT
+[0m12:15:52.998416 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:52.998742 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: COMMIT
+[0m12:15:53.234642 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:15:53.239995 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."points_currency_conversation__dbt_backup"
+[0m12:15:53.241572 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_currency_conversation"
+[0m12:15:53.242300 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_currency_conversation"} */
+drop table if exists "high_rewards"."dbt"."points_currency_conversation__dbt_backup" cascade
+[0m12:15:53.483144 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.240 seconds
+[0m12:15:53.486222 [debug] [Thread-1 (]: On model.highreward_dev_database.points_currency_conversation: Close
+[0m12:15:53.487466 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff8d41ae0>]}
+[0m12:15:53.488593 [info ] [Thread-1 (]: 9 of 26 OK created sql view model dbt.points_currency_conversation ............. [[32mCREATE VIEW[0m in 2.62s]
+[0m12:15:53.489749 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.points_currency_conversation
+[0m12:15:53.490528 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.points_definition
+[0m12:15:53.491458 [info ] [Thread-1 (]: 10 of 26 START sql view model dbt.points_definition ............................ [RUN]
+[0m12:15:53.492321 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.points_currency_conversation, now model.highreward_dev_database.points_definition)
+[0m12:15:53.492964 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.points_definition
+[0m12:15:53.495821 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.points_definition"
+[0m12:15:53.496750 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.points_definition
+[0m12:15:53.501866 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.points_definition"
+[0m12:15:53.502583 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_definition"
+[0m12:15:53.502894 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: BEGIN
+[0m12:15:53.503157 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:54.907634 [debug] [Thread-1 (]: SQL status: BEGIN in 1.404 seconds
+[0m12:15:54.909135 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_definition"
+[0m12:15:54.910221 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_definition"} */
+
+  create view "high_rewards"."dbt"."points_definition__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.points_definition
+  );
+[0m12:15:55.154950 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.244 seconds
+[0m12:15:55.161341 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_definition"
+[0m12:15:55.162101 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_definition"} */
+alter table "high_rewards"."dbt"."points_definition" rename to "points_definition__dbt_backup"
+[0m12:15:55.394102 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:15:55.402741 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_definition"
+[0m12:15:55.403702 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_definition"} */
+alter table "high_rewards"."dbt"."points_definition__dbt_tmp" rename to "points_definition"
+[0m12:15:55.635769 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:15:55.640358 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: COMMIT
+[0m12:15:55.641213 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_definition"
+[0m12:15:55.642022 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: COMMIT
+[0m12:15:55.876162 [debug] [Thread-1 (]: SQL status: COMMIT in 0.232 seconds
+[0m12:15:55.883635 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."points_definition__dbt_backup"
+[0m12:15:55.885581 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_definition"
+[0m12:15:55.886372 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_definition"} */
+drop table if exists "high_rewards"."dbt"."points_definition__dbt_backup" cascade
+[0m12:15:56.144330 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.257 seconds
+[0m12:15:56.148003 [debug] [Thread-1 (]: On model.highreward_dev_database.points_definition: Close
+[0m12:15:56.149228 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff991b220>]}
+[0m12:15:56.150517 [info ] [Thread-1 (]: 10 of 26 OK created sql view model dbt.points_definition ....................... [[32mCREATE VIEW[0m in 2.66s]
+[0m12:15:56.151588 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.points_definition
+[0m12:15:56.152337 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.points_range
+[0m12:15:56.153105 [info ] [Thread-1 (]: 11 of 26 START sql view model dbt.points_range ................................. [RUN]
+[0m12:15:56.153913 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.points_definition, now model.highreward_dev_database.points_range)
+[0m12:15:56.154757 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.points_range
+[0m12:15:56.157554 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.points_range"
+[0m12:15:56.158413 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.points_range
+[0m12:15:56.164399 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.points_range"
+[0m12:15:56.164908 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_range"
+[0m12:15:56.165223 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: BEGIN
+[0m12:15:56.165501 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:15:57.563029 [debug] [Thread-1 (]: SQL status: BEGIN in 1.397 seconds
+[0m12:15:57.564639 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_range"
+[0m12:15:57.565775 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_range"} */
+
+  create view "high_rewards"."dbt"."points_range__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.points_range
+  );
+[0m12:15:57.802671 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:15:57.809414 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_range"
+[0m12:15:57.809778 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_range"} */
+alter table "high_rewards"."dbt"."points_range" rename to "points_range__dbt_backup"
+[0m12:15:58.043259 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:15:58.050758 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_range"
+[0m12:15:58.051654 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_range"} */
+alter table "high_rewards"."dbt"."points_range__dbt_tmp" rename to "points_range"
+[0m12:15:58.287564 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.235 seconds
+[0m12:15:58.292224 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: COMMIT
+[0m12:15:58.293130 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_range"
+[0m12:15:58.293838 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: COMMIT
+[0m12:15:58.526725 [debug] [Thread-1 (]: SQL status: COMMIT in 0.232 seconds
+[0m12:15:58.530804 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."points_range__dbt_backup"
+[0m12:15:58.532238 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_range"
+[0m12:15:58.532911 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_range"} */
+drop table if exists "high_rewards"."dbt"."points_range__dbt_backup" cascade
+[0m12:15:58.770577 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.237 seconds
+[0m12:15:58.773629 [debug] [Thread-1 (]: On model.highreward_dev_database.points_range: Close
+[0m12:15:58.774845 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffbd00eb0>]}
+[0m12:15:58.776096 [info ] [Thread-1 (]: 11 of 26 OK created sql view model dbt.points_range ............................ [[32mCREATE VIEW[0m in 2.62s]
+[0m12:15:58.777337 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.points_range
+[0m12:15:58.778190 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.points_transaction
+[0m12:15:58.779283 [info ] [Thread-1 (]: 12 of 26 START sql view model dbt.points_transaction ........................... [RUN]
+[0m12:15:58.780147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.points_range, now model.highreward_dev_database.points_transaction)
+[0m12:15:58.780911 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.points_transaction
+[0m12:15:58.784163 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.points_transaction"
+[0m12:15:58.785092 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.points_transaction
+[0m12:15:58.789939 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.points_transaction"
+[0m12:15:58.790557 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_transaction"
+[0m12:15:58.790926 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: BEGIN
+[0m12:15:58.791251 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:00.184459 [debug] [Thread-1 (]: SQL status: BEGIN in 1.393 seconds
+[0m12:16:00.185545 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_transaction"
+[0m12:16:00.186425 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_transaction"} */
+
+  create view "high_rewards"."dbt"."points_transaction__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.points_transaction
+  );
+[0m12:16:00.420456 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.233 seconds
+[0m12:16:00.426213 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_transaction"
+[0m12:16:00.426955 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_transaction"} */
+alter table "high_rewards"."dbt"."points_transaction" rename to "points_transaction__dbt_backup"
+[0m12:16:00.661552 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:00.669574 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_transaction"
+[0m12:16:00.670484 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_transaction"} */
+alter table "high_rewards"."dbt"."points_transaction__dbt_tmp" rename to "points_transaction"
+[0m12:16:00.903182 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.232 seconds
+[0m12:16:00.907212 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: COMMIT
+[0m12:16:00.908141 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_transaction"
+[0m12:16:00.909016 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: COMMIT
+[0m12:16:01.147645 [debug] [Thread-1 (]: SQL status: COMMIT in 0.238 seconds
+[0m12:16:01.156853 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."points_transaction__dbt_backup"
+[0m12:16:01.158427 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.points_transaction"
+[0m12:16:01.159338 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.points_transaction"} */
+drop table if exists "high_rewards"."dbt"."points_transaction__dbt_backup" cascade
+[0m12:16:01.572615 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.412 seconds
+[0m12:16:01.575906 [debug] [Thread-1 (]: On model.highreward_dev_database.points_transaction: Close
+[0m12:16:01.577175 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4cd3e50>]}
+[0m12:16:01.578407 [info ] [Thread-1 (]: 12 of 26 OK created sql view model dbt.points_transaction ...................... [[32mCREATE VIEW[0m in 2.80s]
+[0m12:16:01.580023 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.points_transaction
+[0m12:16:01.580842 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.product
+[0m12:16:01.581774 [info ] [Thread-1 (]: 13 of 26 START sql view model dbt.product ...................................... [RUN]
+[0m12:16:01.582855 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.points_transaction, now model.highreward_dev_database.product)
+[0m12:16:01.583673 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.product
+[0m12:16:01.587309 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.product"
+[0m12:16:01.588441 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.product
+[0m12:16:01.595335 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.product"
+[0m12:16:01.596603 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product"
+[0m12:16:01.597636 [debug] [Thread-1 (]: On model.highreward_dev_database.product: BEGIN
+[0m12:16:01.598328 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:03.005953 [debug] [Thread-1 (]: SQL status: BEGIN in 1.407 seconds
+[0m12:16:03.007720 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product"
+[0m12:16:03.009198 [debug] [Thread-1 (]: On model.highreward_dev_database.product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product"} */
+
+  create view "high_rewards"."dbt"."product__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.product
+  );
+[0m12:16:03.247483 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:16:03.255746 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product"
+[0m12:16:03.256590 [debug] [Thread-1 (]: On model.highreward_dev_database.product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product"} */
+alter table "high_rewards"."dbt"."product" rename to "product__dbt_backup"
+[0m12:16:03.491416 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:03.496665 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product"
+[0m12:16:03.497428 [debug] [Thread-1 (]: On model.highreward_dev_database.product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product"} */
+alter table "high_rewards"."dbt"."product__dbt_tmp" rename to "product"
+[0m12:16:03.731303 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:03.735067 [debug] [Thread-1 (]: On model.highreward_dev_database.product: COMMIT
+[0m12:16:03.735886 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product"
+[0m12:16:03.736548 [debug] [Thread-1 (]: On model.highreward_dev_database.product: COMMIT
+[0m12:16:03.972117 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:16:03.978841 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."product__dbt_backup"
+[0m12:16:03.980777 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product"
+[0m12:16:03.981590 [debug] [Thread-1 (]: On model.highreward_dev_database.product: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product"} */
+drop table if exists "high_rewards"."dbt"."product__dbt_backup" cascade
+[0m12:16:04.219272 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.237 seconds
+[0m12:16:04.222889 [debug] [Thread-1 (]: On model.highreward_dev_database.product: Close
+[0m12:16:04.224290 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4d6e380>]}
+[0m12:16:04.225609 [info ] [Thread-1 (]: 13 of 26 OK created sql view model dbt.product ................................. [[32mCREATE VIEW[0m in 2.64s]
+[0m12:16:04.226729 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.product
+[0m12:16:04.227584 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.product_ocr_scans_ocr_scan
+[0m12:16:04.228648 [info ] [Thread-1 (]: 14 of 26 START sql view model dbt.product_ocr_scans_ocr_scan ................... [RUN]
+[0m12:16:04.229512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.product, now model.highreward_dev_database.product_ocr_scans_ocr_scan)
+[0m12:16:04.230238 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.product_ocr_scans_ocr_scan
+[0m12:16:04.233601 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:04.234581 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.product_ocr_scans_ocr_scan
+[0m12:16:04.240724 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:04.241298 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:04.241629 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: BEGIN
+[0m12:16:04.241903 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:05.640302 [debug] [Thread-1 (]: SQL status: BEGIN in 1.398 seconds
+[0m12:16:05.642295 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:05.643748 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product_ocr_scans_ocr_scan"} */
+
+  create view "high_rewards"."dbt"."product_ocr_scans_ocr_scan__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.product_ocr_scans_ocr_scan
+  );
+[0m12:16:05.878059 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.233 seconds
+[0m12:16:05.885886 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:05.886662 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product_ocr_scans_ocr_scan"} */
+alter table "high_rewards"."dbt"."product_ocr_scans_ocr_scan" rename to "product_ocr_scans_ocr_scan__dbt_backup"
+[0m12:16:06.120556 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:06.125476 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:06.126207 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product_ocr_scans_ocr_scan"} */
+alter table "high_rewards"."dbt"."product_ocr_scans_ocr_scan__dbt_tmp" rename to "product_ocr_scans_ocr_scan"
+[0m12:16:06.359259 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.232 seconds
+[0m12:16:06.362719 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: COMMIT
+[0m12:16:06.363759 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:06.364595 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: COMMIT
+[0m12:16:06.599793 [debug] [Thread-1 (]: SQL status: COMMIT in 0.234 seconds
+[0m12:16:06.605937 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."product_ocr_scans_ocr_scan__dbt_backup"
+[0m12:16:06.607553 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.product_ocr_scans_ocr_scan"
+[0m12:16:06.608305 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.product_ocr_scans_ocr_scan"} */
+drop table if exists "high_rewards"."dbt"."product_ocr_scans_ocr_scan__dbt_backup" cascade
+[0m12:16:06.845380 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.236 seconds
+[0m12:16:06.847498 [debug] [Thread-1 (]: On model.highreward_dev_database.product_ocr_scans_ocr_scan: Close
+[0m12:16:06.848335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4d6e230>]}
+[0m12:16:06.849156 [info ] [Thread-1 (]: 14 of 26 OK created sql view model dbt.product_ocr_scans_ocr_scan .............. [[32mCREATE VIEW[0m in 2.62s]
+[0m12:16:06.849846 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.product_ocr_scans_ocr_scan
+[0m12:16:06.850332 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.redeemed_gift
+[0m12:16:06.850954 [info ] [Thread-1 (]: 15 of 26 START sql view model dbt.redeemed_gift ................................ [RUN]
+[0m12:16:06.851487 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.product_ocr_scans_ocr_scan, now model.highreward_dev_database.redeemed_gift)
+[0m12:16:06.851962 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.redeemed_gift
+[0m12:16:06.854413 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.redeemed_gift"
+[0m12:16:06.855374 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.redeemed_gift
+[0m12:16:06.861420 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.redeemed_gift"
+[0m12:16:06.862296 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.redeemed_gift"
+[0m12:16:06.862852 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: BEGIN
+[0m12:16:06.863299 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:08.261190 [debug] [Thread-1 (]: SQL status: BEGIN in 1.397 seconds
+[0m12:16:08.262797 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.redeemed_gift"
+[0m12:16:08.263943 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.redeemed_gift"} */
+
+  create view "high_rewards"."dbt"."redeemed_gift__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.redeemed_gift
+  );
+[0m12:16:08.502383 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.237 seconds
+[0m12:16:08.509335 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.redeemed_gift"
+[0m12:16:08.510057 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.redeemed_gift"} */
+alter table "high_rewards"."dbt"."redeemed_gift" rename to "redeemed_gift__dbt_backup"
+[0m12:16:08.742629 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.232 seconds
+[0m12:16:08.751964 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.redeemed_gift"
+[0m12:16:08.752730 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.redeemed_gift"} */
+alter table "high_rewards"."dbt"."redeemed_gift__dbt_tmp" rename to "redeemed_gift"
+[0m12:16:08.987867 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:08.992199 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: COMMIT
+[0m12:16:08.993047 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.redeemed_gift"
+[0m12:16:08.993724 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: COMMIT
+[0m12:16:09.233816 [debug] [Thread-1 (]: SQL status: COMMIT in 0.239 seconds
+[0m12:16:09.239519 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."redeemed_gift__dbt_backup"
+[0m12:16:09.241156 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.redeemed_gift"
+[0m12:16:09.241824 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.redeemed_gift"} */
+drop table if exists "high_rewards"."dbt"."redeemed_gift__dbt_backup" cascade
+[0m12:16:09.482065 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.239 seconds
+[0m12:16:09.484823 [debug] [Thread-1 (]: On model.highreward_dev_database.redeemed_gift: Close
+[0m12:16:09.485891 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffbd00eb0>]}
+[0m12:16:09.487056 [info ] [Thread-1 (]: 15 of 26 OK created sql view model dbt.redeemed_gift ........................... [[32mCREATE VIEW[0m in 2.63s]
+[0m12:16:09.488020 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.redeemed_gift
+[0m12:16:09.488754 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.scanned_products
+[0m12:16:09.489655 [info ] [Thread-1 (]: 16 of 26 START sql view model dbt.scanned_products ............................. [RUN]
+[0m12:16:09.490514 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.redeemed_gift, now model.highreward_dev_database.scanned_products)
+[0m12:16:09.491157 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.scanned_products
+[0m12:16:09.494014 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.scanned_products"
+[0m12:16:09.494827 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.scanned_products
+[0m12:16:09.499084 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.scanned_products"
+[0m12:16:09.499556 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.scanned_products"
+[0m12:16:09.499937 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: BEGIN
+[0m12:16:09.500222 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:10.891973 [debug] [Thread-1 (]: SQL status: BEGIN in 1.392 seconds
+[0m12:16:10.892753 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.scanned_products"
+[0m12:16:10.893340 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.scanned_products"} */
+
+  create view "high_rewards"."dbt"."scanned_products__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.scanned_products
+  );
+[0m12:16:11.128908 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.235 seconds
+[0m12:16:11.131750 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.scanned_products"
+[0m12:16:11.132108 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.scanned_products"} */
+alter table "high_rewards"."dbt"."scanned_products" rename to "scanned_products__dbt_backup"
+[0m12:16:11.363337 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:16:11.368034 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.scanned_products"
+[0m12:16:11.368562 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.scanned_products"} */
+alter table "high_rewards"."dbt"."scanned_products__dbt_tmp" rename to "scanned_products"
+[0m12:16:11.601928 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:11.605447 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: COMMIT
+[0m12:16:11.606198 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.scanned_products"
+[0m12:16:11.606866 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: COMMIT
+[0m12:16:11.840516 [debug] [Thread-1 (]: SQL status: COMMIT in 0.233 seconds
+[0m12:16:11.846881 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."scanned_products__dbt_backup"
+[0m12:16:11.848665 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.scanned_products"
+[0m12:16:11.849434 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.scanned_products"} */
+drop table if exists "high_rewards"."dbt"."scanned_products__dbt_backup" cascade
+[0m12:16:12.090764 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.240 seconds
+[0m12:16:12.094017 [debug] [Thread-1 (]: On model.highreward_dev_database.scanned_products: Close
+[0m12:16:12.095151 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff8d5bb50>]}
+[0m12:16:12.096183 [info ] [Thread-1 (]: 16 of 26 OK created sql view model dbt.scanned_products ........................ [[32mCREATE VIEW[0m in 2.60s]
+[0m12:16:12.097359 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.scanned_products
+[0m12:16:12.098046 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.spatial_ref_sys
+[0m12:16:12.098945 [info ] [Thread-1 (]: 17 of 26 START sql view model dbt.spatial_ref_sys .............................. [RUN]
+[0m12:16:12.099537 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.scanned_products, now model.highreward_dev_database.spatial_ref_sys)
+[0m12:16:12.099998 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.spatial_ref_sys
+[0m12:16:12.102107 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:12.102643 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.spatial_ref_sys
+[0m12:16:12.109157 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:12.109802 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:12.110136 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: BEGIN
+[0m12:16:12.110410 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:13.673855 [debug] [Thread-1 (]: SQL status: BEGIN in 1.563 seconds
+[0m12:16:13.674748 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:13.675710 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.spatial_ref_sys"} */
+
+  create view "high_rewards"."dbt"."spatial_ref_sys__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.spatial_ref_sys
+  );
+[0m12:16:13.940054 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.263 seconds
+[0m12:16:13.948926 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:13.949846 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.spatial_ref_sys"} */
+alter table "high_rewards"."dbt"."spatial_ref_sys" rename to "spatial_ref_sys__dbt_backup"
+[0m12:16:14.203925 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.253 seconds
+[0m12:16:14.210618 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:14.211474 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.spatial_ref_sys"} */
+alter table "high_rewards"."dbt"."spatial_ref_sys__dbt_tmp" rename to "spatial_ref_sys"
+[0m12:16:14.465084 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.253 seconds
+[0m12:16:14.470622 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: COMMIT
+[0m12:16:14.471597 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:14.472429 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: COMMIT
+[0m12:16:14.729909 [debug] [Thread-1 (]: SQL status: COMMIT in 0.257 seconds
+[0m12:16:14.735231 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."spatial_ref_sys__dbt_backup"
+[0m12:16:14.736893 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.spatial_ref_sys"
+[0m12:16:14.737712 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.spatial_ref_sys"} */
+drop table if exists "high_rewards"."dbt"."spatial_ref_sys__dbt_backup" cascade
+[0m12:16:15.038784 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.300 seconds
+[0m12:16:15.042949 [debug] [Thread-1 (]: On model.highreward_dev_database.spatial_ref_sys: Close
+[0m12:16:15.045124 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff430a4a0>]}
+[0m12:16:15.046979 [info ] [Thread-1 (]: 17 of 26 OK created sql view model dbt.spatial_ref_sys ......................... [[32mCREATE VIEW[0m in 2.95s]
+[0m12:16:15.048091 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.spatial_ref_sys
+[0m12:16:15.048879 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.store
+[0m12:16:15.049858 [info ] [Thread-1 (]: 18 of 26 START sql view model dbt.store ........................................ [RUN]
+[0m12:16:15.050716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.spatial_ref_sys, now model.highreward_dev_database.store)
+[0m12:16:15.051365 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.store
+[0m12:16:15.054425 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.store"
+[0m12:16:15.055360 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.store
+[0m12:16:15.060012 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.store"
+[0m12:16:15.060547 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store"
+[0m12:16:15.060871 [debug] [Thread-1 (]: On model.highreward_dev_database.store: BEGIN
+[0m12:16:15.061155 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:17.792569 [debug] [Thread-1 (]: SQL status: BEGIN in 2.731 seconds
+[0m12:16:17.794269 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store"
+[0m12:16:17.795710 [debug] [Thread-1 (]: On model.highreward_dev_database.store: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store"} */
+
+  create view "high_rewards"."dbt"."store__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.store
+  );
+[0m12:16:18.041024 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.244 seconds
+[0m12:16:18.049673 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store"
+[0m12:16:18.050472 [debug] [Thread-1 (]: On model.highreward_dev_database.store: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store"} */
+alter table "high_rewards"."dbt"."store" rename to "store__dbt_backup"
+[0m12:16:18.291145 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.240 seconds
+[0m12:16:18.297445 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store"
+[0m12:16:18.298088 [debug] [Thread-1 (]: On model.highreward_dev_database.store: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store"} */
+alter table "high_rewards"."dbt"."store__dbt_tmp" rename to "store"
+[0m12:16:18.539733 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.241 seconds
+[0m12:16:18.546145 [debug] [Thread-1 (]: On model.highreward_dev_database.store: COMMIT
+[0m12:16:18.547682 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store"
+[0m12:16:18.548917 [debug] [Thread-1 (]: On model.highreward_dev_database.store: COMMIT
+[0m12:16:18.782996 [debug] [Thread-1 (]: SQL status: COMMIT in 0.233 seconds
+[0m12:16:18.789825 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."store__dbt_backup"
+[0m12:16:18.792097 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store"
+[0m12:16:18.793157 [debug] [Thread-1 (]: On model.highreward_dev_database.store: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store"} */
+drop table if exists "high_rewards"."dbt"."store__dbt_backup" cascade
+[0m12:16:19.043050 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.249 seconds
+[0m12:16:19.046152 [debug] [Thread-1 (]: On model.highreward_dev_database.store: Close
+[0m12:16:19.047361 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4ce26b0>]}
+[0m12:16:19.048497 [info ] [Thread-1 (]: 18 of 26 OK created sql view model dbt.store ................................... [[32mCREATE VIEW[0m in 4.00s]
+[0m12:16:19.049549 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.store
+[0m12:16:19.050359 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.store_banner
+[0m12:16:19.051319 [info ] [Thread-1 (]: 19 of 26 START sql view model dbt.store_banner ................................. [RUN]
+[0m12:16:19.052059 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.store, now model.highreward_dev_database.store_banner)
+[0m12:16:19.052653 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.store_banner
+[0m12:16:19.054974 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.store_banner"
+[0m12:16:19.055746 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.store_banner
+[0m12:16:19.059506 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.store_banner"
+[0m12:16:19.059968 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_banner"
+[0m12:16:19.060263 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: BEGIN
+[0m12:16:19.060529 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:20.672186 [debug] [Thread-1 (]: SQL status: BEGIN in 1.611 seconds
+[0m12:16:20.673756 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_banner"
+[0m12:16:20.674823 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_banner"} */
+
+  create view "high_rewards"."dbt"."store_banner__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.store_banner
+  );
+[0m12:16:20.909572 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.234 seconds
+[0m12:16:20.917216 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_banner"
+[0m12:16:20.918046 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_banner"} */
+alter table "high_rewards"."dbt"."store_banner" rename to "store_banner__dbt_backup"
+[0m12:16:21.164487 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.245 seconds
+[0m12:16:21.172470 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_banner"
+[0m12:16:21.173326 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_banner"} */
+alter table "high_rewards"."dbt"."store_banner__dbt_tmp" rename to "store_banner"
+[0m12:16:21.407637 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:21.412760 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: COMMIT
+[0m12:16:21.413715 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_banner"
+[0m12:16:21.414489 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: COMMIT
+[0m12:16:21.650083 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:16:21.652787 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."store_banner__dbt_backup"
+[0m12:16:21.653864 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_banner"
+[0m12:16:21.654400 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_banner"} */
+drop table if exists "high_rewards"."dbt"."store_banner__dbt_backup" cascade
+[0m12:16:21.916083 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.261 seconds
+[0m12:16:21.920658 [debug] [Thread-1 (]: On model.highreward_dev_database.store_banner: Close
+[0m12:16:21.922110 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff433e0b0>]}
+[0m12:16:21.923450 [info ] [Thread-1 (]: 19 of 26 OK created sql view model dbt.store_banner ............................ [[32mCREATE VIEW[0m in 2.87s]
+[0m12:16:21.925176 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.store_banner
+[0m12:16:21.925984 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.store_check_in_record
+[0m12:16:21.927046 [info ] [Thread-1 (]: 20 of 26 START sql view model dbt.store_check_in_record ........................ [RUN]
+[0m12:16:21.927878 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.store_banner, now model.highreward_dev_database.store_check_in_record)
+[0m12:16:21.928537 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.store_check_in_record
+[0m12:16:21.932849 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.store_check_in_record"
+[0m12:16:21.933619 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.store_check_in_record
+[0m12:16:21.937658 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.store_check_in_record"
+[0m12:16:21.938140 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_check_in_record"
+[0m12:16:21.938473 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: BEGIN
+[0m12:16:21.938747 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:24.246343 [debug] [Thread-1 (]: SQL status: BEGIN in 2.307 seconds
+[0m12:16:24.248138 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_check_in_record"
+[0m12:16:24.249561 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_check_in_record"} */
+
+  create view "high_rewards"."dbt"."store_check_in_record__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.store_check_in_record
+  );
+[0m12:16:24.487007 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:16:24.497107 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_check_in_record"
+[0m12:16:24.498360 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_check_in_record"} */
+alter table "high_rewards"."dbt"."store_check_in_record" rename to "store_check_in_record__dbt_backup"
+[0m12:16:24.730914 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:16:24.741049 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_check_in_record"
+[0m12:16:24.742490 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_check_in_record"} */
+alter table "high_rewards"."dbt"."store_check_in_record__dbt_tmp" rename to "store_check_in_record"
+[0m12:16:24.974756 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.230 seconds
+[0m12:16:24.981296 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: COMMIT
+[0m12:16:24.983104 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_check_in_record"
+[0m12:16:24.984699 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: COMMIT
+[0m12:16:25.220145 [debug] [Thread-1 (]: SQL status: COMMIT in 0.234 seconds
+[0m12:16:25.229481 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."store_check_in_record__dbt_backup"
+[0m12:16:25.232835 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.store_check_in_record"
+[0m12:16:25.234347 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.store_check_in_record"} */
+drop table if exists "high_rewards"."dbt"."store_check_in_record__dbt_backup" cascade
+[0m12:16:25.470756 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.235 seconds
+[0m12:16:25.475938 [debug] [Thread-1 (]: On model.highreward_dev_database.store_check_in_record: Close
+[0m12:16:25.478310 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff8d2c4c0>]}
+[0m12:16:25.480777 [info ] [Thread-1 (]: 20 of 26 OK created sql view model dbt.store_check_in_record ................... [[32mCREATE VIEW[0m in 3.55s]
+[0m12:16:25.482894 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.store_check_in_record
+[0m12:16:25.484159 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.user_activity
+[0m12:16:25.485622 [info ] [Thread-1 (]: 21 of 26 START sql view model dbt.user_activity ................................ [RUN]
+[0m12:16:25.486734 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.store_check_in_record, now model.highreward_dev_database.user_activity)
+[0m12:16:25.487593 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.user_activity
+[0m12:16:25.490398 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.user_activity"
+[0m12:16:25.491121 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.user_activity
+[0m12:16:25.495173 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.user_activity"
+[0m12:16:25.495678 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_activity"
+[0m12:16:25.496027 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: BEGIN
+[0m12:16:25.496313 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:26.894528 [debug] [Thread-1 (]: SQL status: BEGIN in 1.398 seconds
+[0m12:16:26.895245 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_activity"
+[0m12:16:26.895807 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_activity"} */
+
+  create view "high_rewards"."dbt"."user_activity__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.user_activity
+  );
+[0m12:16:27.130181 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.234 seconds
+[0m12:16:27.137443 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_activity"
+[0m12:16:27.137893 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_activity"} */
+alter table "high_rewards"."dbt"."user_activity" rename to "user_activity__dbt_backup"
+[0m12:16:27.374774 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.236 seconds
+[0m12:16:27.382001 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_activity"
+[0m12:16:27.382844 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_activity"} */
+alter table "high_rewards"."dbt"."user_activity__dbt_tmp" rename to "user_activity"
+[0m12:16:27.617537 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:27.622315 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: COMMIT
+[0m12:16:27.623273 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_activity"
+[0m12:16:27.623979 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: COMMIT
+[0m12:16:27.858899 [debug] [Thread-1 (]: SQL status: COMMIT in 0.234 seconds
+[0m12:16:27.865004 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."user_activity__dbt_backup"
+[0m12:16:27.866688 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_activity"
+[0m12:16:27.867043 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_activity"} */
+drop table if exists "high_rewards"."dbt"."user_activity__dbt_backup" cascade
+[0m12:16:28.159460 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.292 seconds
+[0m12:16:28.163486 [debug] [Thread-1 (]: On model.highreward_dev_database.user_activity: Close
+[0m12:16:28.164865 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff4356650>]}
+[0m12:16:28.166193 [info ] [Thread-1 (]: 21 of 26 OK created sql view model dbt.user_activity ........................... [[32mCREATE VIEW[0m in 2.68s]
+[0m12:16:28.167310 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.user_activity
+[0m12:16:28.168063 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.user_device_info
+[0m12:16:28.168829 [info ] [Thread-1 (]: 22 of 26 START sql view model dbt.user_device_info ............................. [RUN]
+[0m12:16:28.169830 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.user_activity, now model.highreward_dev_database.user_device_info)
+[0m12:16:28.170587 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.user_device_info
+[0m12:16:28.173487 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.user_device_info"
+[0m12:16:28.174453 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.user_device_info
+[0m12:16:28.179463 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.user_device_info"
+[0m12:16:28.180034 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_device_info"
+[0m12:16:28.180518 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: BEGIN
+[0m12:16:28.181012 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:29.992978 [debug] [Thread-1 (]: SQL status: BEGIN in 1.812 seconds
+[0m12:16:29.994667 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_device_info"
+[0m12:16:29.995840 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_device_info"} */
+
+  create view "high_rewards"."dbt"."user_device_info__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.user_device_info
+  );
+[0m12:16:30.233162 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:16:30.238104 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_device_info"
+[0m12:16:30.238813 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_device_info"} */
+alter table "high_rewards"."dbt"."user_device_info" rename to "user_device_info__dbt_backup"
+[0m12:16:30.473243 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:30.482813 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_device_info"
+[0m12:16:30.483954 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_device_info"} */
+alter table "high_rewards"."dbt"."user_device_info__dbt_tmp" rename to "user_device_info"
+[0m12:16:30.718641 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:30.722664 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: COMMIT
+[0m12:16:30.723449 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_device_info"
+[0m12:16:30.724060 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: COMMIT
+[0m12:16:30.959722 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:16:30.965430 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."user_device_info__dbt_backup"
+[0m12:16:30.968791 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_device_info"
+[0m12:16:30.969468 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_device_info"} */
+drop table if exists "high_rewards"."dbt"."user_device_info__dbt_backup" cascade
+[0m12:16:31.205760 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.235 seconds
+[0m12:16:31.210260 [debug] [Thread-1 (]: On model.highreward_dev_database.user_device_info: Close
+[0m12:16:31.211664 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff8d1f430>]}
+[0m12:16:32.395353 [info ] [Thread-1 (]: 22 of 26 OK created sql view model dbt.user_device_info ........................ [[32mCREATE VIEW[0m in 3.04s]
+[0m12:16:32.397968 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.user_device_info
+[0m12:16:32.400243 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.user_referral_history
+[0m12:16:32.402267 [info ] [Thread-1 (]: 23 of 26 START sql view model dbt.user_referral_history ........................ [RUN]
+[0m12:16:32.403900 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.user_device_info, now model.highreward_dev_database.user_referral_history)
+[0m12:16:32.405395 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.user_referral_history
+[0m12:16:32.410966 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.user_referral_history"
+[0m12:16:32.413160 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.user_referral_history
+[0m12:16:32.424517 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.user_referral_history"
+[0m12:16:32.425577 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_referral_history"
+[0m12:16:32.426234 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: BEGIN
+[0m12:16:32.426670 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:33.835433 [debug] [Thread-1 (]: SQL status: BEGIN in 1.408 seconds
+[0m12:16:33.836871 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_referral_history"
+[0m12:16:33.837989 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_referral_history"} */
+
+  create view "high_rewards"."dbt"."user_referral_history__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.user_referral_history
+  );
+[0m12:16:34.074008 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.235 seconds
+[0m12:16:34.079007 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_referral_history"
+[0m12:16:34.079732 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_referral_history"} */
+alter table "high_rewards"."dbt"."user_referral_history" rename to "user_referral_history__dbt_backup"
+[0m12:16:34.311775 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.231 seconds
+[0m12:16:34.319397 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_referral_history"
+[0m12:16:34.320257 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_referral_history"} */
+alter table "high_rewards"."dbt"."user_referral_history__dbt_tmp" rename to "user_referral_history"
+[0m12:16:34.555317 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:34.560657 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: COMMIT
+[0m12:16:34.561654 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_referral_history"
+[0m12:16:34.562274 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: COMMIT
+[0m12:16:34.797704 [debug] [Thread-1 (]: SQL status: COMMIT in 0.235 seconds
+[0m12:16:34.803871 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."user_referral_history__dbt_backup"
+[0m12:16:34.805260 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_referral_history"
+[0m12:16:34.805572 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_referral_history"} */
+drop table if exists "high_rewards"."dbt"."user_referral_history__dbt_backup" cascade
+[0m12:16:35.050753 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.245 seconds
+[0m12:16:35.053725 [debug] [Thread-1 (]: On model.highreward_dev_database.user_referral_history: Close
+[0m12:16:35.054868 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff43947c0>]}
+[0m12:16:35.056082 [info ] [Thread-1 (]: 23 of 26 OK created sql view model dbt.user_referral_history ................... [[32mCREATE VIEW[0m in 2.65s]
+[0m12:16:35.057170 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.user_referral_history
+[0m12:16:35.057623 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.user_setting
+[0m12:16:35.058054 [info ] [Thread-1 (]: 24 of 26 START sql view model dbt.user_setting ................................. [RUN]
+[0m12:16:35.058446 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.user_referral_history, now model.highreward_dev_database.user_setting)
+[0m12:16:35.058779 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.user_setting
+[0m12:16:35.060210 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.user_setting"
+[0m12:16:35.060685 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.user_setting
+[0m12:16:35.064628 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.user_setting"
+[0m12:16:35.065187 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_setting"
+[0m12:16:35.065507 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: BEGIN
+[0m12:16:35.065787 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:36.458811 [debug] [Thread-1 (]: SQL status: BEGIN in 1.393 seconds
+[0m12:16:36.460813 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_setting"
+[0m12:16:36.462465 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_setting"} */
+
+  create view "high_rewards"."dbt"."user_setting__dbt_tmp"
+    
+    
+  as (
+    SELECT * FROM public.user_setting
+  );
+[0m12:16:36.699802 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.236 seconds
+[0m12:16:36.706962 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_setting"
+[0m12:16:36.707688 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_setting"} */
+alter table "high_rewards"."dbt"."user_setting" rename to "user_setting__dbt_backup"
+[0m12:16:36.942949 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:36.949619 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_setting"
+[0m12:16:36.950404 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_setting"} */
+alter table "high_rewards"."dbt"."user_setting__dbt_tmp" rename to "user_setting"
+[0m12:16:37.191709 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.240 seconds
+[0m12:16:37.196980 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: COMMIT
+[0m12:16:37.197819 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_setting"
+[0m12:16:37.198514 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: COMMIT
+[0m12:16:37.433893 [debug] [Thread-1 (]: SQL status: COMMIT in 0.234 seconds
+[0m12:16:37.439874 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."user_setting__dbt_backup"
+[0m12:16:37.442561 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.user_setting"
+[0m12:16:37.443701 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.user_setting"} */
+drop table if exists "high_rewards"."dbt"."user_setting__dbt_backup" cascade
+[0m12:16:37.685929 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.241 seconds
+[0m12:16:37.690350 [debug] [Thread-1 (]: On model.highreward_dev_database.user_setting: Close
+[0m12:16:37.691962 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff89cfca0>]}
+[0m12:16:37.693402 [info ] [Thread-1 (]: 24 of 26 OK created sql view model dbt.user_setting ............................ [[32mCREATE VIEW[0m in 2.63s]
+[0m12:16:37.694583 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.user_setting
+[0m12:16:37.695391 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.users
+[0m12:16:37.696315 [info ] [Thread-1 (]: 25 of 26 START sql view model dbt.users ........................................ [RUN]
+[0m12:16:37.697125 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.user_setting, now model.highreward_dev_database.users)
+[0m12:16:37.697773 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.users
+[0m12:16:37.700812 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.users"
+[0m12:16:37.701762 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.users
+[0m12:16:37.706639 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.users"
+[0m12:16:37.707186 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.users"
+[0m12:16:37.707542 [debug] [Thread-1 (]: On model.highreward_dev_database.users: BEGIN
+[0m12:16:37.707861 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:39.122457 [debug] [Thread-1 (]: SQL status: BEGIN in 1.414 seconds
+[0m12:16:39.124125 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.users"
+[0m12:16:39.125859 [debug] [Thread-1 (]: On model.highreward_dev_database.users: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.users"} */
+
+  create view "high_rewards"."dbt"."users__dbt_tmp"
+    
+    
+  as (
+    Select * from public.user
+  );
+[0m12:16:39.365432 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.238 seconds
+[0m12:16:39.374020 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.users"
+[0m12:16:39.375136 [debug] [Thread-1 (]: On model.highreward_dev_database.users: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.users"} */
+alter table "high_rewards"."dbt"."users__dbt_tmp" rename to "users"
+[0m12:16:39.609296 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:39.612838 [debug] [Thread-1 (]: On model.highreward_dev_database.users: COMMIT
+[0m12:16:39.613876 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.users"
+[0m12:16:39.614777 [debug] [Thread-1 (]: On model.highreward_dev_database.users: COMMIT
+[0m12:16:39.847782 [debug] [Thread-1 (]: SQL status: COMMIT in 0.232 seconds
+[0m12:16:39.856339 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."users__dbt_backup"
+[0m12:16:39.857800 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.users"
+[0m12:16:39.858471 [debug] [Thread-1 (]: On model.highreward_dev_database.users: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.users"} */
+drop view if exists "high_rewards"."dbt"."users__dbt_backup" cascade
+[0m12:16:40.092233 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.233 seconds
+[0m12:16:40.096400 [debug] [Thread-1 (]: On model.highreward_dev_database.users: Close
+[0m12:16:40.098339 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff41fa7d0>]}
+[0m12:16:40.100083 [info ] [Thread-1 (]: 25 of 26 OK created sql view model dbt.users ................................... [[32mCREATE VIEW[0m in 2.40s]
+[0m12:16:40.101392 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.users
+[0m12:16:40.102483 [debug] [Thread-1 (]: Began running node model.highreward_dev_database.my_second_dbt_model
+[0m12:16:40.103791 [info ] [Thread-1 (]: 26 of 26 START sql view model dbt.my_second_dbt_model .......................... [RUN]
+[0m12:16:40.104706 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.highreward_dev_database.users, now model.highreward_dev_database.my_second_dbt_model)
+[0m12:16:40.105470 [debug] [Thread-1 (]: Began compiling node model.highreward_dev_database.my_second_dbt_model
+[0m12:16:40.109019 [debug] [Thread-1 (]: Writing injected SQL for node "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:40.109649 [debug] [Thread-1 (]: Began executing node model.highreward_dev_database.my_second_dbt_model
+[0m12:16:40.113118 [debug] [Thread-1 (]: Writing runtime sql for node "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:40.113576 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:40.113891 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: BEGIN
+[0m12:16:40.114164 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:16:41.503098 [debug] [Thread-1 (]: SQL status: BEGIN in 1.388 seconds
+[0m12:16:41.504280 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:41.505153 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_second_dbt_model"} */
+
+  create view "high_rewards"."dbt"."my_second_dbt_model__dbt_tmp"
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from "high_rewards"."dbt"."my_first_dbt_model"
+where id = 1
+  );
+[0m12:16:41.740965 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.235 seconds
+[0m12:16:41.751460 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:41.752689 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_second_dbt_model"} */
+alter table "high_rewards"."dbt"."my_second_dbt_model" rename to "my_second_dbt_model__dbt_backup"
+[0m12:16:41.987522 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.234 seconds
+[0m12:16:41.996099 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:41.997471 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_second_dbt_model"} */
+alter table "high_rewards"."dbt"."my_second_dbt_model__dbt_tmp" rename to "my_second_dbt_model"
+[0m12:16:42.231627 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.233 seconds
+[0m12:16:42.238040 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: COMMIT
+[0m12:16:42.239641 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:42.240945 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: COMMIT
+[0m12:16:42.478642 [debug] [Thread-1 (]: SQL status: COMMIT in 0.236 seconds
+[0m12:16:42.484291 [debug] [Thread-1 (]: Applying DROP to: "high_rewards"."dbt"."my_second_dbt_model__dbt_backup"
+[0m12:16:42.485069 [debug] [Thread-1 (]: Using postgres connection "model.highreward_dev_database.my_second_dbt_model"
+[0m12:16:42.485364 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "highreward_dev_database", "target_name": "prod", "node_id": "model.highreward_dev_database.my_second_dbt_model"} */
+drop table if exists "high_rewards"."dbt"."my_second_dbt_model__dbt_backup" cascade
+[0m12:16:42.721814 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.236 seconds
+[0m12:16:42.725075 [debug] [Thread-1 (]: On model.highreward_dev_database.my_second_dbt_model: Close
+[0m12:16:42.726296 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af0c4168-6ae1-43d7-a452-850d8f554ae2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff41f7a90>]}
+[0m12:16:42.727803 [info ] [Thread-1 (]: 26 of 26 OK created sql view model dbt.my_second_dbt_model ..................... [[32mCREATE VIEW[0m in 2.62s]
+[0m12:16:42.728849 [debug] [Thread-1 (]: Finished running node model.highreward_dev_database.my_second_dbt_model
+[0m12:16:42.730893 [debug] [MainThread]: Using postgres connection "master"
+[0m12:16:42.731523 [debug] [MainThread]: On master: BEGIN
+[0m12:16:42.732037 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:16:44.146155 [debug] [MainThread]: SQL status: BEGIN in 1.414 seconds
+[0m12:16:44.147169 [debug] [MainThread]: On master: COMMIT
+[0m12:16:44.148065 [debug] [MainThread]: Using postgres connection "master"
+[0m12:16:44.148767 [debug] [MainThread]: On master: COMMIT
+[0m12:16:44.382253 [debug] [MainThread]: SQL status: COMMIT in 0.233 seconds
+[0m12:16:44.384328 [debug] [MainThread]: On master: Close
+[0m12:16:44.386910 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:16:44.388031 [debug] [MainThread]: Connection 'model.highreward_dev_database.my_second_dbt_model' was properly closed.
+[0m12:16:44.389405 [info ] [MainThread]: 
+[0m12:16:44.390447 [info ] [MainThread]: Finished running 25 view models, 1 table model in 0 hours 1 minutes and 20.82 seconds (80.82s).
+[0m12:16:44.396332 [debug] [MainThread]: Command end result
+[0m12:16:44.424948 [info ] [MainThread]: 
+[0m12:16:44.425403 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:16:44.425728 [info ] [MainThread]: 
+[0m12:16:44.426019 [info ] [MainThread]: Done. PASS=26 WARN=0 ERROR=0 SKIP=0 TOTAL=26
+[0m12:16:44.426729 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 82.03522, "process_user_time": 3.809282, "process_kernel_time": 0.124957, "process_mem_max_rss": "115260", "process_in_blocks": "4320", "process_out_blocks": "3768"}
+[0m12:16:44.427208 [debug] [MainThread]: Command `dbt run` succeeded at 12:16:44.427130 after 82.04 seconds
+[0m12:16:44.427526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffbf824d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfff91bc5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bfffaacee90>]}
+[0m12:16:44.427847 [debug] [MainThread]: Flushing usage events
